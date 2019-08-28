@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductGetComponent } from './product-get/product-get.component';
+import { ProductBbvaComponent } from './product-bbva/product-bbva.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: '',
     component: ProductGetComponent
+  },
+  {
+    path: 'bbva',
+    component: ProductBbvaComponent
   }
 ];
 
