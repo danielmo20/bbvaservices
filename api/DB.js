@@ -1,5 +1,5 @@
 // DB.js
 
 module.exports = {
-  DB: 'mongodb://localhost:27017/bbvacore'
+  DB: 'mongodb://bbva:bbvanet1@ds311968.mlab.com:11968/bbvacore'
 };
