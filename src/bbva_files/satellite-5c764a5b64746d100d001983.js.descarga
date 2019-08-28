@@ -1,0 +1,165 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  
+if (IL){ //sólo se ejecuta el código si hay librería
+
+console.log('prueba')
+var visa = localStorage.getItem('paso_visa');
+if(visa){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_visa':true,
+
+}});
+};
+var lifemiles = localStorage.getItem('lifemiles');
+if(lifemiles){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_lifemiles':true,
+
+}});
+}
+var Vclasica = localStorage.getItem('Vclasica');
+if(Vclasica){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_Vclasica':true,
+
+}});
+}
+var Congelada = localStorage.getItem('Congelada');
+if(Congelada){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_Congelada':true,
+
+}});
+};
+var VOro = localStorage.getItem('VOro');
+if(VOro){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_VOro':true,
+
+}});
+};
+var VElite = localStorage.getItem('VElite');
+if(VElite){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_VElite':true,
+
+}});
+};
+var Master = localStorage.getItem('Master');
+if(Master){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_Master':true,
+
+}});
+};
+var Plat = localStorage.getItem('Plat');
+if(Plat){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_Plat':true,
+
+}});
+};
+var MBlack = localStorage.getItem('MBlack');
+if(MBlack){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_MBlack':true,
+
+}});
+}
+var VPlat = localStorage.getItem('VPlat');
+if(VPlat){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_VPlat':true,
+
+}});
+}
+var LPlat = localStorage.getItem('LPlat');
+if(LPlat){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_LPlat':true,
+
+}});
+};
+var MStan = localStorage.getItem('MStan');
+if(MStan){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_MStan':true,
+
+}});
+};
+var VPre = localStorage.getItem('VPre');
+if(VPre){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_VPre':true,
+
+}});
+};
+var TCredito = localStorage.getItem('TCredito');
+if(TCredito){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.profile_TCredito':true,
+
+}});
+};
+var MGold = localStorage.getItem('MGold');
+if(MGold){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.MGold':true,
+
+}});
+};
+  var firstStepFunnel= localStorage.getItem('funnel1');
+  finalStepFunnel= localStorage.getItem('funnelfinal');
+
+  if(firstStepFunnel){
+	window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.Profie_FSF':true,
+
+}});
+
+
+  } else if(finalStepFunnel){
+
+
+ window.adobe.target.trackEvent({
+'mbox':'target-global-mbox',
+'params':{
+'profile.Pofile_LSF':true,
+
+}});
+  }  
+  
+}
+});
