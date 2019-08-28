@@ -21,7 +21,11 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/js",
+              "src/manifest.json",
+              "src/images/icons",
+              "src/app/js/sw.js",
             ],
             "styles": [
               "src/styles.css",
