@@ -9,7 +9,7 @@ import { ActivatedRoute, Router} from '@angular/router';
 })
 export class ProductsService {
 
-  uri = 'http://localhost:4000/products';
+  uri = 'http://pwa.dmoscarella.com:4000/products';
 
   constructor(private http: HttpClient, private router: Router) { }
 

@@ -15,3 +15,19 @@
     color: #fff;
 }
 
+.card{
+	padding: 20px;
+}
+.card-body{
+  padding:5px;
+}
+.imgsrc{
+  height:300px;
+  width: 100%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
