@@ -21,7 +21,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/js",
+              "src/manifest.json",
+              "src/images/icons",
+              "src/sw.js",
+			  "src/bbva_files"
             ],
             "styles": [
               "src/styles.css",

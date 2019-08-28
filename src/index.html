@@ -33,6 +33,7 @@
 <meta property="og:url" content="https://www.bbva.com.co">
 <meta property="og:type" content="website">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+<<<<<<< HEAD
       <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
     <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
 
@@ -62,8 +63,19 @@
     
 <link rel="stylesheet" href="./bbva_files/bbva.header.lc-20190804-063043-lc.css" type="text/css">
 <link rel="stylesheet" href="./bbva_files/bbva.header.lc-20190804-063043-lc.css" type="text/css">
+
+  <link rel="manifest" href="manifest.json">
+
 </head>
 <body>
   <app-root></app-root>
-</body>
+  <script type="module">
+	import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+
+	if ('serviceWorker' in navigator) {
+	  const wb = new Workbox('sw.js');
+		wb.register();
+	}
+</script>
+ </body>
 </html>
