@@ -1,5 +1,28 @@
 <!-- product-get.component.html -->
 
+<<<<<<< HEAD
+    <div class="col-4 card-product" *ngFor="let product of products">
+
+        <div class="col-4">
+            <img src="assets/mastercard.png" class="img-fluid img-thumbnail"/><h1>{{ product.ProductName }}</h1>
+        </div>
+        <div class="col-5">
+            <h3>{{ product.ProductDescription }}</h3>
+        </div>
+        <div class="col-25">
+            <h2>{{ product.ProductPrice | currency: '$ '}}</h2>
+        </div>
+        <br/>
+        <div class="col-2">
+            <a [routerLink]="['/edit', product._id]" class="btn btn-primary">Edit</a>
+        </div>
+        <div class="col-2">
+            <a (click)="deleteProduct(product._id)" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+    <app-comic-get></app-comic-get>
+</div>
+=======
 
 <div class="row">
     <div class= "col col-lg-4" *ngFor="let product of products">
@@ -21,3 +44,4 @@
           <!--/.Card-->
     </div>
   </div>
+>>>>>>> 044aa6517a9c7e29d77a661a89f9680a5bd31082

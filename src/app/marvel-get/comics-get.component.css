@@ -1,0 +1,8 @@
+img {
+    width: calc(100% - 30px);
+    margin: 15px;
+    box-sizing: border-box;
+}
+.comic {
+    margin: 10px 0;
+}
