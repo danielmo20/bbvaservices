@@ -1,16 +1,22 @@
 <!-- product-get.component.html -->
-<div class="row">
 
-  <div class="col-4 card-product" *ngFor="let product of products">
-	
-		<div class="col-4">
-			<img src="assets/mastercard.png" class="img-fluid img-thumbnail"/><h1>{{ product.ProductName }}</h1>			
-		</div>
-		<div class="col-5"><h3>{{ product.ProductDescription }}</h3></div>
-		<div class="col-25"><h2>{{ product.ProductPrice | currency: '$ '}}</h2></div>
-		<br/>
-		<div class="col-2"><a [routerLink]="['/edit', product._id]" class="btn btn-primary">Edit</a></div>
-		<div class="col-2"><a (click) = "deleteProduct(product._id)" class="btn btn-danger">Delete</a></div>	
-	</div>
-</div>
- 
+
+<div class="row">
+    <div class= "col col-lg-4" *ngFor="let product of products">
+        <!--Card-->
+          <div class="card flexcss">
+              <!--Card image-->
+              <img class="imgsrc img-responsive img-rounded" src="assets/mastercard.png" />
+              <!--Card content-->
+              <div class="card-body">
+                  <!--Title-->
+                  <h4 class="card-title">{{ product.ProductName }}</h4>
+                  <!--Text-->
+                  <p class="card-text"> <h5>{{ product.ProductDescription }}</h5>
+                  <a [routerLink]="['/edit', product._id]" class="btn btn-primary">Edit</a>
+		  <a (click) = "deleteProduct(product._id)" class="btn btn-danger">Delete</a>
+              </div>
+          </div>
+          <!--/.Card-->
+    </div>
+  </div>

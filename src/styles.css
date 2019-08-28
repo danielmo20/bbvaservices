@@ -14,4 +14,10 @@
 .bg-bbva-nav-bar a {
     color: #fff;
 }
-
+.card-body{
+  padding:5px;
+}
+.imgsrc{
+  height:300px;
+  width: 100%;
+}
