@@ -1,0 +1,13 @@
+<!-- comic-get.component.html -->
+<div class="row">
+    <div *ngFor='let comic of comics' class="col-xs-12 col-md-4 comic">
+        <div class="card flexcss h-100">
+            <img [src]="comic.thumbnail.path + '/detail.' + comic.thumbnail.extension">
+            <div class="card-body">
+                <h2 class="card-title">{{ comic.title }}</h2>
+                    <!-- <p class="card-text">{{ comic.description }}</p> -->
+                <p class="card-text">{{ comic.prices[0].price }}</p>
+            </div>
+        </div>
+    </div>
+</div>
